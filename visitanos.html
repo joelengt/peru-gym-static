@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mamá Manzana</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="app/css/app.min.css" media="screen,projection">
+  <script src="app/js/jquery.js"></script>
+  <script src="app/js/jquery-ui.js"></script>
+  <script src="app/js/bootstrap.min.js"></script>
+  <script src="app/js/bxslider.js"></script>
+  <script src="app/js/viewportchecker.js"></script>
+  <script src="app/js/app.min.js"></script>
+</head>
+<body>
+  <header class="header" role="navigation">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <span>MENU</span>
+    </button>
+    <div class="clearfix">
+      <a class="h_logo" href="index.html"></a>
+      <div class="nav_color">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav nav_gym">
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="visitanos.html">Visitanos</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+  </header>
+  <section class="section-free  slides">
+    <div class="b_banner" style="background-image: url(app/img/pruebagratis.jpg)">
+      <div class="b_cell">
+        <h1>PRUEBA GRATIS</h1>
+        <h4>Descubre lo que tenemos para ti, que esperas inscribete.</h4>
+      </div>
+    </div>
+    <div class="b_form">
+      <div class="container">
+        <div class="b_description">
+          <p>En Mister Fitness queremos invitarte a que disfrutes de un día muy saludable y compruebes asi todo lo que te podemos ofrecer para verte y sentirte mejor.</p>
+          <p>Conseguir tu pase de cortesía es muy sencillo. Completa el formulario y recibirás la confirmación. Imprímelo y acude al centro para vivir una increible experiencia.</p>
+          <p>¡Que lo disfrutes!</p>    
+        </div>
+        <div class="content_form">
+          <form action="">
+            <div class="b_block">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="DNI">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo Electronico">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Celular">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <p>Sexo</p>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadi" id="inlineRadio1" value="option1"> Femenino
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadi" id="inlineRadio2" value="option2"> Masculino
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row text-left">
+                <label class="label-invitar">
+                  INVITAR A UN AMIGO<input type="checkbox" id="friends-check" value="option1">
+                </label>
+              </div>
+              <div class="block_friends" style="display: none;">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="DNI">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <p>Sexo</p>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadi" id="inlineRadio1" value="option1"> Femenino
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadi" id="inlineRadio2" value="option2"> Masculino
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn-submit">ENVIAR</button>
+              </div>
+            </div>
+          </form>
+          <script>
+            $(function(){
+               $('#friends-check').change(function() {
+
+                /*if($(this).is(":checked")) {
+                  $('.block_friends').fadeIn('slow');
+                }else {*/
+                  $('.block_friends').slideToggle( "slow" )//.fadeOut('slow');       
+                //}
+              });
+             });
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <h5 class="copy-right">© 2016 Mister Fitness. Todos los derechos reservados.</h5>
+    </div>
+  </footer>
+</body>
+</html>
